@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Assignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fbebf5856f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+</head>
+<body>
+    <!-- 1 -->
+    <div>
+        <p>#1 <br> Create a div tag with the class of “gridOne”. Create two paragraph tags that respectively say “Hello World” and “My Fantastic Content”. This grid should have two equally sized columns. Use inline styling to turn the text of the second paragraph tag blue:</p>
+    </div>
+    <div class="gridOne">
+        <p>Hello World</p>
+        <p style="color:blue">My Fantastic Content</p>
+    </div>
+
+    <!-- 2 -->
+    <div>
+        <p>#2 <br> Create another div tag in the same HTML file. Make sure that none of the grids are nested inside each other. Give this div the class of “gridTwo”. Create three divs inside of gridTwo, this means that they will be child divs in relation to gridTwo. Assign them each a unique class. Add a paragraph tag to each of the divs with whatever text you would like. Each child div should have its own different background color. Try using red, blue, and yellow. This grid should have three columns. The third column should be twice as large as the first two columns. The background colors will help you identify if the sizes created by your grid-template-columns are correct.</p>
+    </div>
+    <div class="gridTwo">
+        <div style="background-color: lightcoral;">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div style="background-color: lightblue;">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, odio?</p>
+        </div>
+        <div style="background-color: lightgoldenrodyellow;">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+        </div>
+    </div>
+
+    <!-- 3 -->
+    <div>
+        <p>#3 <br> Create another div tag in the same HTML file. Give this div the class of “gridThree”. Create two child divs inside of gridThree and give them both a unique class. The first child div should contain a paragraph tag and the second should contain an image of your choice. This grid should have two rows. The second row should be three times as large as the first. Use background colors again to help make the sizes clear. Give gridThree a width of 500 pixels and a height of 300 pixels. 
+        *Make sure that you give the image a width of 500 pixels and a height of 225 pixels. You will also need to make sure that object-fit equals cover so that the image will not be distorted or too large for the row.</p>
+    </div>
+    <div class="gridThree">
+        <div class="firstDiv">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis sapiente veniam aut dolores.</p>
+        </div>
+        <div class="secondDiv">
+            <img src="images/p2.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- 4 -->
+    <div>
+        <p>#4 <br> Create another div tag in the same HTML file. Give this div the class of “gridFour”. Create two child divs and give the first a unique class name and the second an ID. The first div should contain a paragraph tag. The second should contain two paragraph tags. GridFour should have two equally sized rows. Now we will deal with a nested grid. Select the second child div by its ID. Use CSS Grid to create another grid in that div. There should be two grid columns of equal size. Give gridFour a width of 500 pixels and a background color of green. </p>
+    </div>
+    <div class="gridFour">
+        <div class="firstDiv">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus?</p>
+        </div>
+        <div id="secondDiv">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+
+    <!-- 5 -->
+    <div>
+        <p>#5 <br> Create another grid following the same instructions as in Grid 4, with the exception of the second child div. Give this div the class of “gridFive”. The second child div should have two images instead of two paragraph tags. The first picture should be twice as wide as the second. You will also have to resize these images so that they fit, try making each 200 pixels tall and wide. Make sure to use object-fit: cover; again. </p>
+    </div>
+    <div class="gridFive">
+        <div class="firstDiv">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, cumque?</p>
+        </div>
+        <div class="secondDiv">
+            <img src="images/p4.jpg" alt="">
+            <img src="images/p9.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- 6 -->
+    <div>
+        <p>#6 <br> Create another div tag in the same HTML file. Give this div the class of “gridSix”. There should be two elements inside of gridSix. The first should be a font-awesome icon of your choice. The second element should be a paragraph tag. Choose a google font and apply it to the paragraph tag. GridSix should have two grid-template-columns. The second column, with the paragraph, should be three times the size of the first column with the icon. Give gridSix a width of 500px and make the background color light gray. </p>
+    </div>
+    <div class="gridSix">
+        <i class="fa-solid fa-ghost"></i>
+        <p>Google Font Here!</p>
+    </div>
+</body>
+</html>

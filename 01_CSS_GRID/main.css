@@ -1,0 +1,75 @@
+html{
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.gridOne{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: lightgray;
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+}
+.gridTwo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.gridThree{
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    width: 500px;
+    height: 300px;
+    background-color: lightgray;
+    text-align: center;
+}
+.gridThree > .secondDiv img{
+    width: 500px;
+    height: 225px;
+    object-fit: cover;
+}
+
+.gridFour{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 500px;
+    background-color: lightgreen;
+}
+
+.gridFour > #secondDiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.gridFive{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 500px;
+    background-color: lightgray;
+}
+
+.gridFive > .secondDiv{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.gridFive > .secondDiv img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.gridSix{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    width: 500px;
+    background-color: lightgray;
+    align-items: center;
+    text-align: center;
+}
+
+.gridSix p{
+    font-family: 'Permanent Marker', cursive;
+}
